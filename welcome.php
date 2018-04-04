@@ -18,7 +18,6 @@ exit();
 <center>     
 <?php
 echo "<p> Hello ".$_SESSION['user'].'! [ <a href="logout.php">logout!</a> ]</p><br/>';
-$now = new DateTime();
 echo "Today is:<br/>";
 date_default_timezone_set('Europe/Warsaw');
 echo date("m/d/Y - H:i A", time());
