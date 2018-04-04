@@ -20,7 +20,8 @@ exit();
 echo "<p> Hello ".$_SESSION['user'].'! [ <a href="logout.php">logout!</a> ]</p><br/>';
 $now = new DateTime();
 echo "Today is:<br/>";
-echo $now->format('Y-m-d');
+date_default_timezone_set('Europe/Warsaw');
+echo date("m/d/Y - H:i A", time());
 echo "<br/><br/><b>email:  </b>".$_SESSION['email'];
 ?>
 <br/><br/>
